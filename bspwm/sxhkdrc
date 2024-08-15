@@ -24,7 +24,7 @@ super + g
 ####### Preselect [also knowms as shit I never use] ########
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + ctrl + {j,k,i,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
