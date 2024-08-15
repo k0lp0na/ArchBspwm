@@ -1,0 +1,30 @@
+import = ["~/.cache/wal/colors-alacritty.toml"]
+#import = ["~/.config/cols/dblue.toml"]
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+opacity = 0.85
+decorations = "full"
+startup_mode = "Windowed"
+dynamic_title = true
+
+  [window.dimensions]
+  columns = 110
+  lines = 35
+
+  [window.padding]
+  x = 5
+  y = 5
+
+[cursor]
+style = {shape = "Block", blinking = "Always" }
+blink_interval = 250
+unfocused_hollow = false
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Medium" }
+
+#builtin_box_drawing = false

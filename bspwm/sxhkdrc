@@ -1,0 +1,185 @@
+###### Window Manegment ########
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+
+####### Preselect [also knowms as shit I never use] ########
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+#### Focus/Swap ####   
+
+# focus the node in the given direction
+super + {_,shift + }{j,k,i,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus the next/previous window in the current desktop
+super + {_,shift + }u
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+##### Resize/Move ##########
+   
+# expand a window by moving one of its side outward
+super + alt + {j,k,i,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {j,k,i,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+####### Kill/Quit ########
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# Powermenu
+super + shift + q
+     ~/.config/rofi/powermenu/powermenu.sh
+
+# close and kill
+super + q
+	bspc node -{c,k}
+
+############ Rofi/Launcher #############
+
+super + space
+       rofi -show drun 
+
+super + alt + a
+       rofi -show filebrowser -config ~/.config/rofi/file.rasi
+
+alt + Tab													
+      rofi -show window -config ~/.config/rofi/config-window.rasi
+
+ctrl + super + v
+      rofi -modi "clipboard:greenclip print" -show clipboard -config ~/.config/rofi/clip.rasi  -run-command '{cmd}'
+
+super + period
+      rofi -modi emoji -show emoji -emoji-mode insert -config ~/.config/rofi/emoji.rasi         
+
+
+##### ScreenShot ######
+
+
+
+Print
+    scrot -e 'xclip -selection clipboard -t image/png < $f' ~/Pictures/ss/screenshot_%Y-%m-%d_%H-%M-%S.png && notify-send ss -t 1000 
+
+shift + Print
+    scrot -s -e 'xclip -selection clipboard -t image/png < $f' ~/Pictures/ss/screenshot_%Y-%m-%d_%H-%M-%S.png && notify-send ss -t 1000 
+
+
+alt + Print
+    scrot -u -e 'xclip -selection clipboard -t image/png < $f' ~/Pictures/ss/screenshot_%Y-%m-%d_%H-%M-%S.png && notify-send ss -t 1000 
+
+########################################### App Binds #################################################
+
+#terminal
+super + Return
+	alacritty
+
+super + shift + Return
+        kitty
+
+
+super + b 
+        brave
+
+super + shift + b
+        chromium
+
+
+super + z
+        spotify
+
+super + shift + z
+        amberol
+
+
+super + v 
+        kitty --class Yazi -e yazi
+
+super + shift + v
+        nemo
+
+super + r
+        xed
+super + shift + r
+        subl
+
+
+super + e
+        jdownloader
+
+
+super + d
+        discord
+
+
+super + a
+        alacritty --class Anime --option window.dimensions.columns=76 --option window.dimensions.lines=18 -e zsh -c "source ~/myenv/bin/activate && anipy-cli"
+
+super + shift + a
+        alacritty --class Anime --option window.dimensions.columns=76 --option window.dimensions.lines=18 -e zsh -c "source ~/myenv/bin/activate && anipy-cli -M"

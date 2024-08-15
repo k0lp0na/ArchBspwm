@@ -1,0 +1,66 @@
+#!/bin/sh
+
+
+bspc monitor -d 1 2 3 4 5
+
+bspc config border_width         3
+bspc config window_gap          10
+bspc config top_padding         28
+bspc config right_padding        0
+bspc config bottom_padding       0
+bspc config left_padding         0
+
+
+bspc config split_ratio          0.5
+
+
+
+bspc config single_monocle       false
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config top_monocle_padding  1
+
+
+bspc config pointer_modifier          mod4
+bspc config pointer_action1           move
+bspc config pointer_action2           resize_side
+bspc config pointer_action3           resize_corner
+bspc config focus_follows_pointer     false
+bspc config pointer_follows_focus     false
+bspc config remove_unplugged_monitors true
+bspc config remove_disabled_monitors  true
+
+bspc rule -a mpv state=fullscreen
+bspc rule -a Anime state=floating
+
+## scra
+
+bspc rule -a "*:*:scaritty" state=floating center=on
+
+# source the colors.
+. "${HOME}/.cache/wal/colors.sh"
+
+
+# Set the border colors.
+bspc config normal_border_color "$color0"
+bspc config active_border_color "$color14"
+bspc config focused_border_color "$color14"
+bspc config presel_feedback_color "$color12"
+
+
+# Launch sxhkd
+pkill -x sxhkd
+pgrep -x sxhkd > /dev/null || sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
+
+picom &
+
+$HOME/.config/polybar/launch.sh
+
+pkill -x greenclip
+pgrep -x greenclip > /dev/null || greenclip daemon &
+
+xfce4-power-manager & 
+
+xsetroot -cursor_name left_ptr
+
+[ "$1" = 0 ] && $HOME/.config/bspwm/wal.sh &

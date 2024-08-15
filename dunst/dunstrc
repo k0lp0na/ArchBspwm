@@ -1,0 +1,80 @@
+[global]
+ follow = none
+ width = 320
+ height = 250
+ origin = top-right
+ offset = 8 x 35
+ scale = 0
+
+### Progress bar ###
+ progress_bar = true
+ progress_bar_height = 10
+ progress_bar_frame_width = 2
+ progress_bar_min_width = 150
+ progress_bar_min_width = 150
+ progress_bar_corner_radius = 0
+ progress_bar_corners = all
+
+ transparency = 30
+
+ separator_height = 2
+ padding = 9
+ horizontal_padding = 9
+ 
+ frame_width = 1
+ sort = yes
+ idle_threshold = 120
+
+### Text ###
+ font = JetBrainsMono Nerd Font 9
+ markup = full
+ alignment = center
+ vertical_alignment = center
+ ellipsize = middle
+ ignore_newline = no
+ stack_duplicates = true
+
+
+### Icons ###
+ enable_recursive_icon_lookup = true
+ icon_theme = BeautyLine         
+ icon_position = left
+ min_icon_size = 32
+ max_icon_size = 128
+
+    
+### History ###
+
+ sticky_history = yes
+ history_length = 30
+
+  
+### Misc/Advanced ###
+ corner_radius = 8
+ corners = all
+
+
+[urgency_low]
+    background = "#181825"
+    foreground = "#CDD6F4"
+    highlight = "#CDD6F4"
+    frame_color = "#181825"
+    timeout = 3
+
+[urgency_normal]
+    background = "#181825"
+    foreground = "#CDD6F4"
+    highlight = "#CDD6F4"
+    frame_color = "#D1E9F6"
+    timeout = 3
+
+[urgency_critical]
+    background = "#270000"
+    foreground = "#CDD6F4"
+    frame_color = "#ff0000"
+    timeout = 1000
+
+
+[fullscreen_show_critical]
+    msg_urgency = critical
+    fullscreen = show

@@ -1,0 +1,394 @@
+[color]
+bg = ${xrdb:background}
+fg = ${xrdb:foreground}
+
+c0 = ${xrdb:color0}
+c1 = ${xrdb:color1}
+c2 = ${xrdb:color2}
+c3 = ${xrdb:color3}
+c4 = ${xrdb:color4}
+c5 = ${xrdb:color5}
+c6 = ${xrdb:color6}
+c7 = ${xrdb:color7}
+c8 = ${xrdb:color8}
+c9 = ${xrdb:color9}
+c10 = ${xrdb:color10}
+c11 = ${xrdb:color11}
+c12 = ${xrdb:color12}
+c13 = ${xrdb:color13}
+c14 = ${xrdb:color14}
+c15 = ${xrdb:color15}
+
+
+
+[bar/bar]
+
+wm-name =bspwm
+wm-restack =bspwm
+
+enable-ipc = true
+
+override-redirect = false
+fixed-center = true
+
+width = 99.9%
+height = 22
+radius = 6
+
+offset-y = 2
+
+dpi-x = 0
+dpi-y = 0
+
+
+dim-value = 1.0
+
+line-size = 2
+
+border-size =2
+border-color =${color.bg}
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+module-margin = 0
+
+
+cursor-click = pointer 
+cursor-scroll = ns-resize
+
+
+font-0 = "JetBrainsMono Nerd Font:size=11:style=medium;2.5"
+font-1 = "JetBrainsMono Nerd Font:style=Bold:size=15;2.5"
+font-2 = Noto Sans CJK JP
+font-3 = Noto Sans CJK KR  
+font-4 = Noto Sans CJK TC
+font-5 = Noto Sans CJK SC
+font-6 = "JetBrainsMono Nerd Font:style=Medium:size=19;4"
+font-7 = "JetBrainsMono Nerd Font:style=bold:size=21;5.5"
+font-8 = "JetBrainsMono Nerd Font:style=medium;2"
+
+
+modules-left = pm rfl ws spo
+modules-center = lfm dt rfm
+modules-right = tr lfm ram sp tmp sp cpu sp vol sp brt sp btr sp wf
+
+
+
+[module/dt]
+type = internal/date
+interval = 1
+date = " %a-%m-%d  %I:%M %p"
+label = %date%
+label-foreground = ${color.c0}
+label-background = ${color.c14}
+[module/lfm]
+type = custom/text
+label = 
+label-foreground = ${color.c14}
+label-font = 7
+[module/rfm]
+type = custom/text
+label = 
+label-foreground = ${color.c14}
+label-font = 7
+
+
+
+
+
+[module/pm]
+type = custom/text 
+
+label = ""
+label-background = ${color.c14}
+label-foreground = FF0000
+label-padding = 1 
+
+click-left = ~/.config/rofi/powermenu/type-2/powermenu.sh
+click-right = powermenu_t1
+[module/rfl]
+type = custom/text
+label = 
+label-foreground = ${color.c14}
+label-font = 8
+
+
+[module/ws]
+type = internal/bspwm
+
+pin-workspaces = true
+inline-mode = false
+enable-click = true
+enable-scroll = true
+reverse-scroll = true
+fuzzy-match = true
+occupied-scroll = false
+
+ws-icon-0 = I;󰎤
+ws-icon-1 = II;󰎧
+ws-icon-2 = III;󰎪
+ws-icon-3 = IV;󰎭
+ws-icon-4 = V;󰎱
+
+format = "<label-state>"
+format-font = 2
+
+label-focused = " %icon%"
+label-focused-foreground = ${color.c4}
+label-focused-background = ${color.bg}
+label-focused-underline = ${color.bg}
+
+label-occupied = " %icon%"
+label-occupied-foreground = ${color.fg}
+
+
+label-urgent = " %icon%"
+label-urgent-foreground = #F37F97
+
+label-empty = " %icon%"
+label-empty-foreground = ${color.c7}
+
+
+[module/ap]
+type = internal/xwindow
+
+format = "[<label>]"
+format-background = ${color.bg}
+format-foreground = ${color.c14}
+format-padding = 1
+
+label = "%class%"
+label-maxlen = 11
+
+[module/tr]
+type = internal/tray
+
+format-margin = 5px
+tray-spacing = 5px
+tray-size = 70%
+tray-foreground = ${color.c14}
+
+
+
+
+
+[module/btr]
+type = internal/battery
+
+full-at = 100
+
+battery = BAT0
+adapter = AC
+
+format-charging = <animation-charging><label-charging>
+label-charging = %percentage%%
+format-charging-foreground = ${color.bg}
+format-charging-background = ${color.c14}
+format-charging-font = 1
+
+format-discharging = <ramp-capacity><label-discharging>
+label-discharging = %percentage%%
+format-discharging-background = ${color.c14} 
+format-discharging-foreground = ${color.bg} 
+format-discharging-font = 1
+
+
+
+format-full-prefix = " "
+format-full-prefix-foreground = 65B741
+format-full-prefix-background = ${color.c14}
+format-full-background = ${color.c14}
+
+low-at = 30%
+format-low = <ramp-capacity><label-low>
+label-low = %percentage%%
+label-low-foreground = FF0000
+format-low-background = ${color.c14}
+format-low-foreground = ${color.bg}
+format-low-font = 1
+
+
+label-full = %percentage%%
+label-full-foreground = ${color.bg}
+label-full-prefix-background = ${color.c14}
+
+ramp-capacity-0 = " " 
+ramp-capacity-1 = " " 
+ramp-capacity-2 = " " 
+ramp-capacity-3 = " " 
+ramp-capacity-4 = " "
+
+
+animation-charging-0 = " " 
+animation-charging-1 = " " 
+animation-charging-2 = " " 
+animation-charging-3 = " " 
+animation-charging-4 = " "
+animation-charging-framerate = 750
+
+
+
+
+[module/brt]
+type = internal/backlight
+
+card = intel_backlight
+
+use-actual-brightness = true
+
+poll-interval = 0
+
+enable-scroll = true
+
+scroll-interval = 5
+reverse-scroll = true
+
+format = "<ramp><label>"
+format-background = ${color.c14} 
+
+label = %percentage%%
+label-foreground = ${color.bg} 
+
+
+ramp-0 = "󰃞 " 
+ramp-1 = "󰃝 "
+ramp-2 = "󰃟 " 
+ramp-3 = "󰃠 "
+ramp-foreground = FFCA03
+
+
+[module/sp]
+
+type = custom/text
+
+format = ""
+format-background = ${color.c14} 
+format-foreground = ${color.bg} 
+
+
+
+[module/wf]
+
+type = custom/script
+exec = /home/kolpona/.config/polybar/scripts/wi.sh
+interval = 10
+tail = true
+format-background = ${color.c14} 
+format-foreground = ${color.bg} 
+click-left = /home/kolpona/.config/polybar/scripts/swi.sh
+
+[module/vol]
+
+type = internal/pulseaudio
+
+format-volume = "<ramp-volume><label-volume>"
+format-volume-foreground = ${color.bg}
+format-volume-background = ${color.c14}
+format-font = 1
+
+mapped = true
+use-ui-max = false
+reverse-scroll = true
+scroll-intervel = 1
+
+label-volume = %percentage%%
+
+label-muted = " 󰖁 " 
+label-muted-foreground = ${color.bg}
+label-muted-background = ${color.c14} 
+
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = " "
+ramp-volume-4 = " "
+ramp-volume-5 = " "
+ramp-volume-6 = " "
+ramp-volume-7 = " "
+ramp-volume-8 = " "
+ramp-volume-9 = " "
+
+
+ramp-headphones-0 = " "
+ramp-headphones-1 = " "
+
+
+
+
+
+[module/cpu]
+type = internal/cpu
+
+interval = 1
+
+format = <label>
+format-foreground = ${color.bg}
+label-background = ${color.c14}
+
+format-prefix = " "
+format-prefix-font = 1
+format-prefix-foreground = 0F67B1
+format-prefix-background = ${color.c14}
+
+
+label = "%percentage%%"
+
+[module/tmp]
+type = internal/temperature
+
+interval = 1
+warn-temperature = 70
+
+format = "<ramp><label>"
+format-background = ${color.c14}
+format-warn = <ramp><label-warn>
+format-warn-foreground = #F90716
+format-warn-background = ${color.c14}
+
+label = %temperature-c%
+label-foreground = ${color.bg}
+
+label-warn = %temperature-c%
+label-warn-foreground = ${color.bg}
+
+ramp-0 = " "
+ramp-1 = " " 
+ramp-2 = " "
+ramp-3 = " "
+ramp-foreground = F4A261
+
+
+[module/ram]
+type = internal/memory
+interval = 1
+format-prefix = " "
+format-prefix-foreground = 604CC3
+format-prefix-background = ${color.c14}
+
+label =  %percentage_used:2%%
+label-foreground = ${color.bg}
+label-background = ${color.c14} 
+
+
+
+[module/spo]
+type = custom/script
+interval = 0
+format = <label>
+label = " %output%"
+label-foreground = ${color.c14}
+label-font = 9
+exec = ~/.config/polybar/scripts/spo.sh
+click-left = playerctl play-pause
+click-right = playerctl next
+click-middle = playerctl previous
+double-click-left = sh -c 'playerctl loop | grep -q "track" && playerctl loop off || playerctl loop track'
+tail = true
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+
