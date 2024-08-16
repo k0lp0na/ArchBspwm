@@ -84,16 +84,20 @@ alias anim="source ~/myenv/bin/activate && anipy-cli -M"
 
  #fetch unixporn
 alias ff='fastfetch'
-alias nf='ff -c ~/dots/fastfetch/nitb.jsonc'
+alias nf='nitch'
 alias pf='pfetch'
 alias bf="ff -c ~/dots/fastfetch/boxb.jsonc"
 alias pipe3="pipes.sh -t3"
 alias pipe="pipes.sh"
 alias pipei="pipes.sh -t0"
+alias clock="tty-clock -c -t" 
+alias lock="betterlockscreen -l blur"
+alias tree="cbonsai"
 
  #System
 alias in='sudo pacman -S'
 alias out='sudo pacman -R'
+alias exile="sudo pacman -Rns"
 alias updt='sudo pacman -Syu && yay -Syu'
 alias orp="pacman -Qdtq"
 alias clr="sudo pacman -Rsn $(pacman -Qdtq)"

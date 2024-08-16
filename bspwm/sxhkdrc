@@ -86,10 +86,6 @@ shift + {Left,Down,Up,Right}
 
 ####### Kill/Quit ########
 
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
@@ -143,6 +139,10 @@ super + Return
 super + shift + Return
         kitty
 
+#lock
+super + shift + x
+       betterlockscreen -l blur
+
 
 super + b 
         brave
@@ -153,9 +153,6 @@ super + shift + b
 
 super + z
         spotify
-
-super + shift + z
-        amberol
 
 
 super + v 
