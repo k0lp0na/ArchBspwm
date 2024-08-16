@@ -156,7 +156,7 @@ IloveCandy and Color in /etc/pacman.conf [i think might be wrong]
 
 
 
-### Fix toucepad and brigtness
+### Fix toucepad 
 
 ```
 sudo nano /etc/X11/xorg.conf.d/40-libinput.conf
