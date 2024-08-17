@@ -29,7 +29,7 @@ Movin to ~~fedora 40~~ nope arch it is
 
 **music** = spotify and amberol
 
-**cli tool** = pipe.sh , cava ,fastfetch ,htop ,anipy-cli, pfetch-rc, tty-clock, asciiquarium, nitch
+**cli tool** = pipe.sh , cava ,fastfetch ,htop ,anipy-cli, pfetch-rc, tty-clock, asciiquarium, nitch, cmatrix, cbonsai, asciiquarium 
 
 **text** = xed nano
 
@@ -208,7 +208,7 @@ multilib
 install yay #cuz paru doesnt want to play with me why wont she play with me
 
 ```
-in lxappearance qt5ct qt6ct mpv kitty yazi xed qbittorrent playerctl pacman-contrib chromium discord xfce4-power-manager noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji xdotool 
+in lxappearance qt5ct qt6ct mpv kitty yazi xed qbittorrent playerctl pacman-contrib chromium discord xfce4-power-manager noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji xdotool asciiquarium cmatrix
 ```
 
 **get  whitsur dark theme**
@@ -231,7 +231,7 @@ out vlc
 thats it sooo simple why cant fedora be like this and just play nice
 
 
-yay spotify greenclip brave jdownloader cava pipe.sh 
+yay spotify greenclip brave jdownloader cava pipe.sh cbonsai tty-clock
 
 # other 
 
