@@ -1,0 +1,9 @@
+
+    background:     {background}FF;
+    background-alt: #282A36FF;
+    bg:             {background}90;
+    foreground:     {foreground}FF;
+    selected:       {color14}FF;
+    active:         {color3}FF;
+    urgent:         #FF5555FF;
+    salt:           {color14}70; 

@@ -1,0 +1,126 @@
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+
+
+set linenumbers
+#set boldtext
+set nonewlines
+#set softwrap
+#set zero
+#set mouse
+
+set nohelp
+set minibar
+set constantshow
+set historylog
+set tabsize 4
+set magic
+set noconvert
+set positionlog
+set smarthome
+
+bind ^Z suspend main
+
+## Paint the interface elements of nano.  These are examples; there are
+## no colors by default, except for errorcolor and spotlightcolor.
+
+set stripecolor grey,grey
+set numbercolor white
+
+#set titlecolor bold,black,white
+
+#set promptcolor lightwhite,grey
+#set statuscolor bold,grey,green
+# set errorcolor bold,white,red
+# set spotlightcolor black,lightyellow
+#set selectedcolor lightwhite,grey
+# set scrollercolor cyan
+# set keycolor cyan
+# set functioncolor green
+
+## In root's .nanorc you might want to use:
+# set titlecolor bold,white,magenta
+#set promptcolor black,yellow
+#set statuscolor bold,white,magenta
+# set errorcolor bold,white,red
+# set spotlightcolor black,orange
+# set selectedcolor lightwhite,cyan
+#set stripecolor ,grey
+# set scrollercolor magenta
+#set numbercolor magenta
+# set keycolor lightmagenta
+# set functioncolor magenta
+
+## === Key bindings ===
+## For all details, see 'man nanorc', section REBINDING KEYS.
+
+## If you want to suspend nano with one keystroke (instead of with ^T^Z):
+
+## The <Ctrl+Delete> keystroke deletes the word to the right of the cursor.
+## On some terminals the <Ctrl+Backspace> keystroke produces ^H, which is
+## the ASCII character for backspace, so it is bound by default to the
+## backspace function.  The <Backspace> key itself produces a different
+## keycode, which is hard-bound to the backspace function.  So, if you
+## normally use <Backspace> for backspacing and not ^H, you can make
+## <Ctrl+Backspace> delete the word to the left of the cursor with:
+# bind ^H chopwordleft main
+
+## For a more mnemonic Comment keystroke (overriding Cut-from-cursor):
+# bind M-K comment main
+
+## If you want ^L to just refresh the screen and not center the cursor:
+# bind ^L refresh main
+
+## When you sometimes type M-J instead of M-K, or M-T instead of M-R:
+# unbind M-J main
+# unbind M-T main
+## (Those functions are still accessible through ^T^J and ^T^V.)
+
+## For quickly uppercasing or lowercasing the word under or after the cursor.
+## (These effectively select a word and pipe it through a sed command.)
+# bind Sh-M-U "{nextword}{mark}{prevword}{execute}|sed 's/.*/\U&/'{enter}" main
+# bind Sh-M-L "{nextword}{mark}{prevword}{execute}|sed 's/.*/\L&/'{enter}" main
+
+## For copying a marked region to the system clipboard:
+# bind Sh-M-C "{execute}|xsel -ib{enter}{undo}" main
+
+## For normalizing Unicode to precomposed characters:
+# bind Sh-M-N "{execute}| uconv -x nfc {enter}" main
+
+## For snipping trailing blanks when you save a file:
+# bind ^S "{execute}| sed 's/\s\+$//' {enter}{savefile}" main
+
+## If you would like nano to have keybindings that are more "usual",
+## such as ^O for Open, ^F for Find, ^H for Help, and ^Q for Quit,
+## then uncomment these:
+# bind ^X cut main
+# bind ^C copy main
+# bind ^V paste all
+# bind ^Q exit all
+# bind ^S savefile main
+# bind ^W writeout main
+# bind ^O insert main
+# set multibuffer
+# bind ^H help all
+# bind ^H exit help
+# bind ^F whereis all
+# bind ^G findnext all
+# bind ^B wherewas all
+# bind ^D findprevious all
+# bind ^R replace main
+# unbind ^U all
+# unbind ^N main
+# unbind ^Y all
+# unbind M-J main
+# unbind M-T main
+# bind ^A mark main
+# bind ^P location main
+# bind ^T gotoline main
+# bind ^T gotodir browser
+# bind ^T cutrestoffile execute
+# bind ^L linter execute
+# bind ^E execute main
+# bind ^K "{mark}{end}{zap}" main
+# bind ^U "{mark}{home}{zap}" main
+# bind ^Z undo main
+# bind ^Y redo main

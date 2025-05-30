@@ -1,0 +1,78 @@
+[global]
+ follow = none
+ width = 350
+ height = (30, 200)
+ origin = top-center
+ offset = (8, 30)
+ scale = 0
+
+### Progress bar ###
+ progress_bar = true
+ progress_bar_height = 6
+ progress_bar_frame_width = 2
+ progress_bar_min_width = 100
+ progress_bar_min_width = 100
+ progress_bar_corner_radius = 2
+ progress_bar_corners = all
+
+ separator_height = 2
+ padding = 9
+ horizontal_padding = 9
+ 
+ frame_width = 1
+ sort = yes
+ idle_threshold = 120
+
+### Text ###
+ font = JetBrainsMono Nerd Font 9
+ markup = full
+ alignment = center
+ vertical_alignment = center
+ ellipsize = middle
+ ignore_newline = no
+ stack_duplicates = true
+
+
+### Icons ###
+ enable_recursive_icon_lookup = true
+ icon_theme = "BeautyLine"
+ icon_position = left
+ min_icon_size = 32
+ max_icon_size = 64
+
+    
+### History ###
+
+ sticky_history = yes
+ history_length = 30
+ indicate_hidden = yes
+
+  
+### Misc/Advanced ###
+ corner_radius = 8
+ corners = all
+
+
+[urgency_low]
+    background = "{background}"
+    foreground = "{foreground}"
+    highlight = "{foreground}"
+    frame_color = "{color14}"
+    timeout = 3
+    default_icon = dialog-information
+
+[urgency_normal]
+    background = "{background}"
+    foreground = "{foreground}"
+    highlight = "{foreground}"
+    frame_color = "{color14}"
+    timeout = 3
+    default_icon = dialog-information
+
+[urgency_critical]
+    background = "#cc241d"
+    foreground = "#ebddd2"
+    frame_color = "#fb4934"
+    timeout = 1000
+    default_icon = dialog-warning
+

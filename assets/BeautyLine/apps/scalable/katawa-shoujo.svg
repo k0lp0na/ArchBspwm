@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="128mm" height="128mm" version="1.1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient1140">
+   <stop stop-color="#4854ff" offset="0"/>
+   <stop stop-color="#87e2ff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient1052" x1="64.824" x2="64.05" y1="123.31" y2="13.584" gradientTransform="matrix(1.0562 0 0 1.0857 -3.5977 -10.099)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff29e5" offset="0"/>
+   <stop stop-color="#ff689f" offset=".61987"/>
+   <stop stop-color="#ffd0b8" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient1062" x1="82.6" x2="76.792" y1="98.777" y2="59" gradientTransform="matrix(1.0562 0 0 1.0857 -3.5977 -10.099)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1140"/>
+  <linearGradient id="linearGradient1070" x1="64.781" x2="104.56" y1="77.602" y2="77.602" gradientTransform="matrix(1.0562 0 0 1.0857 -3.5977 -10.099)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1140"/>
+ </defs>
+ <g fill="none" stroke-linecap="round">
+  <g stroke-width="10.709">
+   <path d="m64 33.454s-9.6059-23.45-28.641-23.45c-2.7021 0-5.1589 0.25813-7.3948 0.73979m-17.772 14.28c-1.7554 3.5121-2.9917 7.3812-3.9172 11.31-2.4665 10.471-0.50272 27.024 12.938 44.616 13.45 17.604 44.787 37.401 44.787 37.401m0-84.897s9.6059-23.45 28.641-23.45c19.035 0 25.9 12.81 29.084 26.331 2.4665 10.471 0.50271 27.024-12.938 44.616-13.45 17.604-44.787 37.401-44.787 37.401" stroke="url(#linearGradient1052)" stroke-linejoin="round" stroke-miterlimit="10"/>
+   <path d="m98.839 91.718s-8.8431-11.487-13.466-16.689c-4.9545-5.5747-15.267-15.64-15.267-15.64" stroke="url(#linearGradient1062)" stroke-miterlimit="6.6"/>
+   <path d="m70.106 88.925s11.175-9.0903 16.235-13.843c5.4231-5.093 15.215-15.694 15.215-15.694" stroke="url(#linearGradient1070)" stroke-miterlimit="6.6"/>
+  </g>
+  <path d="m83.432 77.713s0.57032-0.43806 2.909-2.6309 2.647-2.5689 2.647-2.5689" stroke="#ffd5b7" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="8.567"/>
+ </g>
+</svg>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="23"
+   height="22"
+   viewBox="0 0 23 22"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="network-wireless-connected-100.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="43.668129"
+     inkscape:cx="18.285647"
+     inkscape:cy="12.136998"
+     inkscape:window-width="1811"
+     inkscape:window-height="1006"
+     inkscape:window-x="1355"
+     inkscape:window-y="247"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <g
+     clip-path="url(#clip0_451_1764)"
+     id="g1">
+    <path
+       d="M22.1447 7.6011C22.1247 7.58112 22.1035 7.56329 22.0817 7.54649C19.2153 4.52738 15.3496 2.94336 11.3329 2.94336C9.27869 2.94336 7.29422 3.35035 5.43471 4.15294C3.33722 5.0583 1.94759 6.17476 0.521241 7.6011C0.26652 7.85582 0.274035 8.26476 0.521241 8.51196L2.35822 10.349C2.619 10.6097 3.04196 10.5974 3.28831 10.3289C5.37116 8.05842 8.22815 6.80799 11.3329 6.80799C14.4377 6.80799 17.2947 8.05842 19.3776 10.3289C19.6254 10.599 20.0484 10.6083 20.3077 10.349L22.1447 8.51196C22.1507 8.50598 22.1558 8.49949 22.1615 8.49331C22.1655 8.48892 22.1696 8.48463 22.1734 8.48016C22.3952 8.22716 22.3861 7.84242 22.1447 7.6011ZM11.333 13.249C9.93478 13.249 8.64035 13.8764 7.78153 14.9703C7.58027 15.2267 7.60227 15.593 7.83271 15.8235L10.8775 18.8683C11.129 19.1198 11.537 19.1197 11.7884 18.8683L14.8332 15.8235C15.0637 15.593 15.0857 15.2267 14.8844 14.9703C14.0256 13.8764 12.7312 13.249 11.333 13.249ZM11.333 8.09619C8.57955 8.09619 6.00473 9.22665 4.15274 11.2793C3.92301 11.5339 3.93306 11.9238 4.1755 12.1662L5.99356 13.9843C6.25765 14.2485 6.68918 14.2325 6.93372 13.953C8.04167 12.6869 9.64513 11.9608 11.333 11.9608C13.0208 11.9608 14.6243 12.6869 15.7323 13.953C15.9772 14.233 16.4087 14.2481 16.6725 13.9843L18.4905 12.1662C18.7329 11.9238 18.743 11.5339 18.5132 11.2793C16.6613 9.22678 14.0866 8.09619 11.333 8.09619Z"
+       fill="url(#paint0_linear_451_1764)"
+       id="path1" />
+  </g>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="paint0_linear_451_1764"
+       x1="11.333"
+       y1="19.0569"
+       x2="11.333"
+       y2="2.94336"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#02AA93"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#67FF80"
+         id="stop2" />
+    </linearGradient>
+    <clipPath
+       id="clip0_451_1764">
+      <rect
+         width="22"
+         height="22"
+         fill="white"
+         transform="translate(0.333008)"
+         id="rect2" />
+    </clipPath>
+    <radialGradient
+       id="paint3_radial_451_1653"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.29891404,-7.9937132,11.316191,-0.42315358,18.61071,18.810448)">
+      <stop
+         offset="0"
+         stop-color="#02AA93"
+         id="stop10"
+         style="stop-color:#f70fa8;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#67FF80"
+         id="stop11"
+         style="stop-color:#f40631;stop-opacity:1;" />
+    </radialGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint3_radial_451_1653"
+       id="linearGradient7"
+       x1="15.02371"
+       y1="14.941723"
+       x2="22.197611"
+       y2="14.941723"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     d="m 18.61071,10.816698 c -1.3248,0 -2.5109,1.08225 -2.5109,2.39455 v 1.1924 h -0.4785 c -0.331,0 -0.5976,0.2032 -0.5976,0.5275 v 3.5499 c 0,0.3248 0.2666,0.5857 0.5976,0.5857 h 5.9787 c 0.3311,0 0.5976,-0.2609 0.5976,-0.5857 v -3.5499 c 0,-0.3244 -0.2666,-0.5393 -0.5976,-0.5275 h -0.4785 v -1.1924 c 0,-1.3118 -1.1862,-2.39455 -2.5108,-2.39455 z m 0,1.43475 c 0.5961,0 1.0761,0.4839 1.0761,1.0845 v 1.0677 h -2.1522 v -1.0677 c 0,-0.6006 0.4799,-1.0845 1.0761,-1.0845 z"
+     fill="url(#paint3_radial_451_1653)"
+     id="path4"
+     style="fill:url(#linearGradient7)" />
+</svg>

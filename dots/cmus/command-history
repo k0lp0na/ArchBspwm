@@ -1,0 +1,22 @@
+add ~/music
+add ~/musics
+ad ~/Music
+add
+colorscheme gruvbox
+colorscheme gruvbox-night
+colorscheme gruvbox-alt
+bind -f common x player-next
+bind -f common space player-pause
+bind -f common c win-toggle
+bind -f common c player-toggle
+bind -f common space win-pause
+bind -f common space win-a
+bind -f browser space win-activate
+colorscheme dracula
+colorscheme illyria-dark
+colorscheme jellybeans
+colorscheme zenburn
+colorscheme night
+ad ~/musics
+colorscheme cyan
+ad ~/Musics
